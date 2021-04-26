@@ -29,14 +29,19 @@ public class TecnicasEnProgramacion {
                         EjercicioTres.ejecutar();
                         break;
                     case 3:
+                        EjercicioCuatro.ejecutar();
                         break;
                     case 4:
+                        EjercicioCinco.ejecutar();
                         break;
                     case 5:
+                        EjercicioSeis.ejecutar();
                         break;
                     case 6:
+                        EjercicioSiete.ejecutar();
                         break;
                     case 7:
+                        EjercicioOcho.ejecutar();
                         break;
                     default:
                         break;
