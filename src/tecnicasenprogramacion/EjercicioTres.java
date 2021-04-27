@@ -18,8 +18,8 @@ public class EjercicioTres {
         } else {
             int bancosFaltantes = cantidadAlumnos - cantidadBancos;
             JOptionPane.showMessageDialog(null, "La cantidad de bancos existentes no alcanzan para la cantidad alumnos insciptos.\nSe necesitan agregar la siguiente cantidad de bancos: "
-                    + bancosFaltantes , "Ejercicio Tres", 0);
+                    + bancosFaltantes, "Ejercicio Tres", 0);
         }
-
+        TecnicasEnProgramacion.seleccionEnunciado();
     }
 }

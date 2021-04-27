@@ -22,6 +22,6 @@ public class EjercicioCuatro {
         } else {
             JOptionPane.showMessageDialog(null, "No hay descuento para la forma de pago seleccionada.\nEl monto a total a abonar es de: " + montoCompra, "Ejercicio Cuatro" , JOptionPane.INFORMATION_MESSAGE);
         }
-
+        TecnicasEnProgramacion.seleccionEnunciado();
     }
 }
