@@ -9,15 +9,8 @@ public class TecnicasEnProgramacion {
     }
 
     public static void seleccionEnunciado() {
-
-        String[] enunciados = {
-            "Estructuras de Control",
-            "Estructuras de Datos",
-            "Algoritmos Fundamentales"
-        };
-
+        String[] enunciados = {"Estructuras de Control", "Estructuras de Datos", "Algoritmos Fundamentales"};
         int enunciadoSeleccionado = JOptionPane.showOptionDialog(null, "Elije una categoria:", "Módulo Técnicas de Programación", 0, -1, null, enunciados, enunciados[0]);
-
         switch (enunciadoSeleccionado) {
             case 0://Ejercicios 1-8 Estructura de Control
                 seleccionEjerciciosControl();
@@ -70,11 +63,11 @@ public class TecnicasEnProgramacion {
 
     public static void seleccionEjerciciosDatos() {
         //Ejercicios 9-11 Estructuras de Datos
-        
+
     }
 
     public static void seleccionEjerciciosAlgoritmos() {
         //Ejercicios 12-15 Algoritmos Fundamentales
-        
+
     }
 }

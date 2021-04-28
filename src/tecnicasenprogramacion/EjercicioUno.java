@@ -6,6 +6,7 @@ import javax.swing.JOptionPane;
 public class EjercicioUno {
 
     public static void ejecutar() {
+        CommandosConsola.SepararEjercicios();
         JOptionPane.showMessageDialog(null, "El ejercicio se ejecuta por consola.\nContinue en la consola.", "Ejercicio Uno", JOptionPane.INFORMATION_MESSAGE);
 
         Scanner scan = new Scanner(System.in);

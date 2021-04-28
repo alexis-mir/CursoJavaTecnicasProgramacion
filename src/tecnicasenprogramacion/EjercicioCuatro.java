@@ -10,10 +10,7 @@ public class EjercicioCuatro {
         
         //creo lista de formas de pago y pido al usuario que seleccione una
         String[] formasPagos = {"Contado", "Tarjeta", "Otros"};
-
         Object formaPagoSelec = JOptionPane.showInputDialog(null, "Seleccionar forma de pago: ", "Ejercicio Cuatro", -1, null, formasPagos, formasPagos[0]);
-        System.out.println(formaPagoSelec);
-
         
         //si la forma de pago es contado ejecuto el descuento del 10%
         if (formaPagoSelec.equals(formasPagos[0])) {
