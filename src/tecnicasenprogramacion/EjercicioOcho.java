@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class EjercicioOcho {
 
     public static void ejecutar() {
-        CommandosConsola.SepararEjercicios();
+        CommandosConsola.SepararEjercicios("Ocho");
         int cantNum = 4;
         JOptionPane.showMessageDialog(null, "Debe ingresar " + cantNum + " números para luego ser promediados", "Ejercicio Ocho", JOptionPane.INFORMATION_MESSAGE);
         

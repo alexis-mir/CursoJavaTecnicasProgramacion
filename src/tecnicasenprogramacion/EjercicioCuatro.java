@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 public class EjercicioCuatro {
 
     public static void ejecutar() {
+        CommandosConsola.SepararEjercicios("Cuatro");
         // Consulto el monto de compra, lo convierto a entero y lo almaceno.
         Double montoCompra = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresar monto de la compra: ", "Ejercicio Cuatro", -1));
         

@@ -11,7 +11,7 @@ package tecnicasenprogramacion;
  */
 public class CommandosConsola {
 
-    public final static void SepararEjercicios() {
-        System.out.println("\n\n\n\n\n");
+    public final static void SepararEjercicios(String ejercicio) {
+        System.out.println("\n\n\nSe está ejecutando el Ejercicio "+ ejercicio +"\n");
     }
 }

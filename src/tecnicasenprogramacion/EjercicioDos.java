@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 public class EjercicioDos {
 
     public static void ejecutar() {
-        CommandosConsola.SepararEjercicios();
+        CommandosConsola.SepararEjercicios("Dos");
         JOptionPane.showMessageDialog(null, "El ejercicio se ejecuta por consola.\nContinue en la consola.", "Ejercicio Dos", JOptionPane.INFORMATION_MESSAGE);
         String usuario = "admin";
         String contrasenia = "pass";

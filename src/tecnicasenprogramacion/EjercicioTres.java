@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class EjercicioTres {
 
     public static void ejecutar() {
-        
+        CommandosConsola.SepararEjercicios("Tres");
         String cantidadBancosString = JOptionPane.showInputDialog(null, "Ingrese la cantidad de bancos que tiene el aula:", "Ejercicio Tres", -1);
         String cantidadAlumnosString = JOptionPane.showInputDialog(null, "Ingrese la cantidad de alumnos inscriptos para el curso:", "Ejercicio Tres", -1);
 

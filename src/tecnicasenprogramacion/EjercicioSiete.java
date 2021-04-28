@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class EjercicioSiete {
     public static void ejecutar(){
-        CommandosConsola.SepararEjercicios();
+        CommandosConsola.SepararEjercicios("Siete");
         int num = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresar número que desea concocer su tabla de multiplicación:", "Ejercicio Siete", -1));
 
         int multiplicarHasta = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresar hasta que número desea multiplicar el valor ingresado:", "Ejercicio Siete", -1));

@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 public class EjercicioCinco {
 
     public static void ejecutar(){
-        CommandosConsola.SepararEjercicios();
+        CommandosConsola.SepararEjercicios("Cinco");
         //Se indica al usuario que el ejercicio se ejecuta por consola
         JOptionPane.showMessageDialog(null, "El ejercicio se ejecuta por consola.\nContinue en la consola.", "Ejercicio Cinco", JOptionPane.INFORMATION_MESSAGE);
 
