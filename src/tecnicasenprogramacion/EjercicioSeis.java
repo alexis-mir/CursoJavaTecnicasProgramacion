@@ -33,7 +33,7 @@ public class EjercicioSeis {
             System.exit(0);
         }
         int multiplicarHasta = Integer.parseInt(multiplicarHastaString);
-        JOptionPane.showMessageDialog(null, "El ejercicio se ejecuta por consola.\nContinue en la consola.", "Ejercicio Seis", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "La solucion del ejercicio se muestra por consola.", "Ejercicio Seis", JOptionPane.INFORMATION_MESSAGE);
 
         //Muestro la tabla de multiplicacion en consola segun los datos ingresados.
         int n = 1;
