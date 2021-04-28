@@ -6,7 +6,7 @@ public class EjercicioSeis {
 
     public static void ejecutar() {
         CommandosConsola.SepararEjercicios();
-        //Solicito el numero a miltiplicar y valido que sea un numero o que se ingreo algo. y hasta 
+        //Solicito el numero a miltiplicar y valido que sea un numero o que se ingresó algo. 
         String numString = "0";
         do {
             if (!esNumero(numString)) {
