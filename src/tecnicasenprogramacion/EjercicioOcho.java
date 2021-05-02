@@ -5,10 +5,10 @@ import javax.swing.JOptionPane;
 public class EjercicioOcho {
 
     public static void ejecutar() {
-        CommandosConsola.SepararEjercicios("Ocho");
+        CommandosAuxiliares.SeparadorEjercicios("Ocho");
         int cantNum = 4;
         JOptionPane.showMessageDialog(null, "Debe ingresar " + cantNum + " números para luego ser promediados", "Ejercicio Ocho", JOptionPane.INFORMATION_MESSAGE);
-        
+
         double total = 0;
 
         for (int i = 1; i <= cantNum; i++) {
@@ -29,15 +29,15 @@ public class EjercicioOcho {
                 default:
                     break;
             }
-            total += Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresar el " + palabra +" número:", "Ejercicio Ocho", JOptionPane.QUESTION_MESSAGE));
-            
+            Double num = CommandosAuxiliares.getDecimalPorVentana("Ingresar el " + palabra + " número:", "Ejercicio Ocho");//Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresar el " + palabra +" número:", "Ejercicio Ocho", JOptionPane.QUESTION_MESSAGE));
+            if (num == null) {
+                return;
+            }
+            total += num;
         }
-        
-        double prom = total / cantNum;
-        
-        JOptionPane.showMessageDialog(null, "El promedio de los números ingresados es: " + prom, "Ejercicio Ocho", JOptionPane.INFORMATION_MESSAGE);
-        
 
-        TecnicasEnProgramacion.seleccionEnunciado();
+        double prom = total / cantNum;
+
+        JOptionPane.showMessageDialog(null, "El promedio de los números ingresados es: " + prom, "Ejercicio Ocho", JOptionPane.INFORMATION_MESSAGE);
     }
 }

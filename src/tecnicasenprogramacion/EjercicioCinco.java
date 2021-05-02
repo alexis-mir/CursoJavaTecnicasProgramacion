@@ -4,19 +4,17 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class EjercicioCinco {
+    
+    private static final String NOMBRE_EJERCICIO = "Ejercicio Cinco";
 
-    public static void ejecutar(){
-        CommandosConsola.SepararEjercicios("Cinco");
+    public static void ejecutar() {
+        CommandosAuxiliares.SeparadorEjercicios(NOMBRE_EJERCICIO);
         //Se indica al usuario que el ejercicio se ejecuta por consola
-        JOptionPane.showMessageDialog(null, "El ejercicio se ejecuta por consola.\nContinue en la consola.", "Ejercicio Cinco", JOptionPane.INFORMATION_MESSAGE);
-
-        // iniciacion de la class Scanner
-        Scanner scan = new Scanner(System.in);
-
-        // Se pide el mes en formato de numero
-        System.out.println("Ingresar el numero del mes que desea conocer el nombre: ");
-
-        int numMes = scan.nextInt();
+        JOptionPane.showMessageDialog(null, "El ejercicio se ejecuta por consola.\nContinue en la consola.", NOMBRE_EJERCICIO, JOptionPane.INFORMATION_MESSAGE);
+        
+        //Se solicita el numero del mes
+        System.out.println("Ingresar el número del mes que desea conocer el nombre: ");
+        int numMes = ingresarMes();
 
         // Se muestra por consola el nombre del mes ingresado
         switch (numMes) {
@@ -61,6 +59,25 @@ public class EjercicioCinco {
                 break;
 
         }
-        TecnicasEnProgramacion.seleccionEnunciado();
+    }
+
+    private static int ingresarMes() {
+        Scanner scan = new Scanner(System.in);
+        String numStr;
+        int num = 0;
+        boolean esMes = false;
+        do {
+            numStr = scan.next();
+            if (!CommandosAuxiliares.esEntero(numStr)) {
+                System.out.println("No ingresó un número válido, por favor intente nuevamente");
+            } else {
+                num = Integer.parseInt(numStr);
+                esMes = num <= 12 && num >= 1;
+                if (!esMes) {
+                    System.out.println("Debe ingresar un número entre 1 y 12, por favor intente nuevamente");
+                }
+            }
+        } while (!CommandosAuxiliares.esEntero(numStr) || !esMes);
+        return num;
     }
 }

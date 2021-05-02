@@ -4,8 +4,12 @@ import javax.swing.JOptionPane;
 
 public class TecnicasEnProgramacion {
 
+    private static boolean sesionActiva = true;
+
     public static void main(String[] args) {
-        seleccionEnunciado();
+        while (sesionActiva) {
+            seleccionEnunciado();
+        }
     }
 
     public static void seleccionEnunciado() {
@@ -20,6 +24,9 @@ public class TecnicasEnProgramacion {
                 break;
             case 2://Ejercicios 12-15 Algoritmos Fundamentales
                 seleccionEjerciciosAlgoritmos();
+                break;
+            case -1:
+                sesionActiva = false;
                 break;
             default:
                 break;
