@@ -70,6 +70,22 @@ public class TecnicasEnProgramacion {
 
     public static void seleccionEjerciciosDatos() {
         //Ejercicios 9-11 Estructuras de Datos
+        String[] ejerciciosDatos = {"Ejercicio 9", "Ejercicio 10", "Ejercicio 11"};
+        int ejercicioSeleccionado = JOptionPane.showOptionDialog(null, "Elije un ejercicio a ejecutar:", "Estructuras de Datos", 0, -1, null, ejerciciosDatos, ejerciciosDatos[0]);
+
+        switch (ejercicioSeleccionado) {
+            case 0:
+                EjercicioNueve.ejecutar();
+                break;
+            case 1:
+                EjercicioDiez.ejecutar();
+                break;
+            case 2:
+                EjercicioOnce.ejecutar();
+                break;
+            default:
+                break;
+        }
 
     }
 
