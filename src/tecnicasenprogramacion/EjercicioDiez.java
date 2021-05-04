@@ -31,7 +31,7 @@ class EjercicioDiez {
         if (esNulo) {
             return;
         }
-        ArrayList aulasIndicadas = new ArrayList();
+        ArrayList<String> aulasIndicadas = new ArrayList<>();
         int indexIdentificador = 0;
         for (String aula : aulasIdentificador) {
 
@@ -56,9 +56,9 @@ class EjercicioDiez {
             }
         }
         if (aulasIndicadas.size() != 1) {
-            JOptionPane.showMessageDialog(null, "Las aulas indicadas para la cantidad de alumnos inscriptos son: " + aulasIndicadasString.toString(), NOMBRE_EJERCICIO, 0);
+            JOptionPane.showMessageDialog(null, "Las aulas indicadas para la cantidad de alumnos inscriptos son: " + aulasIndicadasString.toString(), NOMBRE_EJERCICIO, JOptionPane.INFORMATION_MESSAGE);
         } else {
-            JOptionPane.showMessageDialog(null, "El aula indicada para la cantidad de alumnos inscriptos es: " + aulasIndicadasString.toString(), NOMBRE_EJERCICIO, 0);
+            JOptionPane.showMessageDialog(null, "El aula indicada para la cantidad de alumnos inscriptos es: " + aulasIndicadasString.toString(), NOMBRE_EJERCICIO, JOptionPane.INFORMATION_MESSAGE);
         }
 
     }
