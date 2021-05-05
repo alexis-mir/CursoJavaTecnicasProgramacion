@@ -2,12 +2,12 @@ package tecnicasenprogramacion;
 
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
+import java.util.List;
 
 class EjercicioDiez {
 
     private static final String NOMBRE_EJERCICIO = "Ejercicio Diez";
 
-    @SuppressWarnings("empty-statement")
     static void ejecutar() {
         CommandosAuxiliares.SeparadorEjercicios(NOMBRE_EJERCICIO);
 
@@ -31,7 +31,7 @@ class EjercicioDiez {
         if (esNulo) {
             return;
         }
-        ArrayList<String> aulasIndicadas = new ArrayList<>();
+        List<String> aulasIndicadas = new ArrayList<>();
         int indexIdentificador = 0;
         for (String aula : aulasIdentificador) {
 
